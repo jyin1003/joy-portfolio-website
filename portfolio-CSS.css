@@ -230,13 +230,13 @@ html, body {
     padding-left: 20px
 }
 
-/*contents page - add javascript for animation upon scroll!!!*/
+/*contents page*/
 .content-container-nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 6vh
+    margin-bottom:0px;
 }
 .content-nav {
     color: inherit;
