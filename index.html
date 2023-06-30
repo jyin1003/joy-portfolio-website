@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="description" content="Web Development and Extended Resume 
+            for Joy Yin." />
+        <meta name="author" content="Joy Yin" />
+        <meta name="language" content="english" />
+        <meta name="googlebot" content="notranslate" />
+        <meta name="rating" content="safe for kids"/>
+        <meta name="copyright" content="Copyright 2023"/> 
+        <!--ensures initialising transition is smooth-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="portfolio-CSS.css"/>
+        <script defer src="Portfolio JS.js"></script>
+
+        <title>Joy's Portfolio Website</title>   
+    </head>
+    <body>
+        <div class="container">
+            <div class="static">
+                <div id="intro-container">
+                    <span id="hi">Hi, I'm Joy Yin!</span>
+                    <!--insert waving emoji-->
+                    <div id="contacts">
+                        <a href="https://www.linkedin.com/in/joy-yin/" target="_blank" 
+                        id="linkedin">
+                            <img src="icons/linkedin.svg" 
+                                alt="LinkedIn Logo" 
+                                width="40"
+                                height="40"
+                                class="invert-image">
+                        </a>
+                        <a href="https://github.com/jyin1003" 
+                            target="_blank" id="github">
+                            <img src="icons/github.svg" 
+                                alt="Github Logo" 
+                                width="40"
+                                height="40"
+                                class="invert-image">
+                        </a>
+                        <a href="mailto:jyin1003@gmail.com" 
+                            id="email">
+                            <img src="icons/mail.svg"
+                                alt="Mail Logo" 
+                                width="40"
+                                height="40"
+                                class="invert-image">
+                        </a>
+                    </div>
+                </div>
+                <div id="stats-container">
+                    <div id="education">
+                        <img src="icons/education-icon.svg" 
+                                alt="education-icon" 
+                                width="30"
+                                height="30"
+                                class="invert-image"/>
+                        <span id="stat-info">
+                                Bachelor of Computer Science
+                        </span>
+                    </div>
+                    <div id="location">
+                        <img src="icons/location-icon.svg" 
+                                alt="location-icon" 
+                                width=30px
+                                height=25px
+                                class="invert-image"/>
+                        <span id="stat-info">
+                                Brisbane, Australia 
+                        </span>
+                    </div>
+                </div>
+                <!--add smooth scrolling in JS-->
+                <div class="content-container-nav">
+                    <a href="#about-me" class ="content-nav">ABOUT</a>
+                    <a href="#technical-toolbox" class="content-nav">TECHNICAL TOOLBOX</a>
+                    <a href="#resume" class="content-nav">RESUME</a>
+                    <a href="#projects" class="content-nav">PROJECTS</a>
+                </div>
+            </div>
+            <div class="content">
+                <div class="content-container" id="about-me">
+                    <div class="content-header-container">
+                        <img src="icons/about-icon.svg" alt="about-icon" 
+                                class="invert-image header-icon"/>
+                        <div class="content-header-underline">
+                            <h2 class="content-header">ABOUT ME</h2>
+                        </div>
+                    </div>
+                    <p id="para-1">
+                        I'm studying a dual major in<span id="bold-this">
+                        Data Science and Programming Languages</span> at the 
+                        University of Queensland. Technology is a tool 
+                        with diverse applications, which has led me to pursue 
+                        it's use in <span id="bold-this">consulting</span> and 
+                        <span id="bold-this">data analytics</span>. I also have
+                        keen interests in <span id="bold-this"> quant trading, 
+                        startups, youth advocacy </span> and 
+                        <span id="bold-this">sustainability</span>.
+                    </p>
+                    <p id="para-2"> 
+                        In my free time, I like to dabble in ice-skating, 
+                        bouldering and the gym. I love my coffee catch-ups 
+                        throughout the week and a nice Saturday dinner 
+                        to finish off. 
+                    </p>
+                </div>
+                <div class="content-container" id="technical-toolbox">
+                    <div class="content-header-container">
+                        <img src="icons/toolbox-icon.svg" alt="toolbox-icon" 
+                                class="invert-image header-icon"/>
+                        <div class="content-header-underline">
+                            <h2 class="content-header">TECHNICAL TOOLBOX</h2>
+                        </div>
+                    </div>
+                    <div id="toolbox-spacing"></div>
+                    <p class="sub-heading" id="language-spacing">Languages</p>
+                        <div class="language-container">
+                            <div class="language">Python</div>
+                            <div class="language">RStudio</div>
+                            <div class="language">MATLAB</div>
+                        </div>
+                    <p class="sub-heading">Web Development</p>
+                    <div class="language-container">
+                        <div class="language">HTML</div>
+                        <div class="language">CSS</div>
+                    </div>
+                    <p class="sub-heading">Software and Platforms</p>
+                    <div class="language-container">
+                        <div class="language">Salesforce Lightning</div>
+                        <div class="language">Oracle Databases</div>
+                        <div class="language">Git & GitHub</div>
+                    </div>
+                </div>
+                <div id="toolbox-spacing"></div>
+                <div class="content-container" id="resume">
+                    <div class="content-header-container">
+                        <img src="icons/resume-icon.svg" alt="resume-icon" 
+                                class="invert-image header-icon"/>
+                        <div class="content-header-underline" id="resume-container">
+                            <h2 class="content-header">RESUME</h2>
+                            <a 
+                            href="JoyYinResume.pdf" download>
+                            <img src="icons/download.svg"
+                                    alt="Download" 
+                                    height="25"
+                                    class="invert-image"
+                                    id="download">
+                            </a>
+                        </div>
+                    </div>
+                    <div id="work-exp-spacing"></div>
+                    <p class="sub-heading" id="bold-this">Work Experience</p>
+                    <div class="work-background">
+                        <div class="work-container">
+                            <p class="work"> Retail Sales Consultant • Telstra
+                            </p>
+                            <p class="years">JAN 2023 - PRESENT</p>
+                        </div>
+                        <div class="experience">
+                            <p id="exp-paragraph">
+                                Solution-orientated customer service role, 
+                                requiring proficient problem-solving skills
+                                that effectively account for unique situations
+                                clients from diverse backgrounds. Efficiently 
+                                operated multiple sales and intranet systems to
+                                process orders and troubleshoot technical 
+                                issues. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="work-background">
+                        <div class="work-container">
+                            <p class="work"> Private Tutor</p>
+                            <p class="years">2021 - PRESENT</p>
+                        </div>
+                        <div class="experience">
+                            <p id="exp-paragraph">
+                                Self-developed curriculum include tailored 
+                                lesson road maps, application questions and
+                                multimedia resources that enhance student 
+                                engagement. To accomodate for online lessons, 
+                                resources and tutorials have been developed to 
+                                assist new students with technology and 
+                                software setup, including IT troubleshooting.
+                            </p>
+                        </div>
+                    </div>
+                    <details>
+                        <summary class="summary">More!</summary>
+                        <div class="work-background-more">
+                            <div class="work-container-more">
+                                <p class="work"> Barista • Starbucks</p>
+                                <p class="years">2021 - 2023</p>
+                            </div>
+                            <div class="experience-more">
+                                <p id="exp-paragraph">
+                                    Operated POS and drive-thru systems 
+                                    simulataneously with detail and accuracy.
+                                    Worked efficiently to service large volumes 
+                                    of customer traffic.
+                                </p>
+                            </div> 
+                        </div>
+                        <div class="work-background-more">
+                            <div class="work-container-more">
+                                <p class="work"> Coach • St Joseph's College</p>
+                                <p class="years">JAN 2023 - APRIL 2023</p>
+                            </div>
+                            <div class="experience-more">
+                                <p id="exp-paragraph">
+                                        Coached two teams in both GPS and QDU
+                                        competitions with weekly trainings.
+                                        Facilitated workshops for junior,
+                                        middle and high school students.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="work-background-more">
+                            <div class="work-container-more">
+                                <p class="work"> Shift Supervisor •
+                                        Oliver Brown
+                                </p>
+                                <p class="years">2018 - 2021</p>
+                            </div>
+                            <div class="experience-more">
+                                <p id="exp-paragraph">
+                                        Co-ordinated work between floor staff,
+                                        baristas and cafe all-rounders. Managed
+                                        rosters and allocated shift lunch breaks.
+                                </p>
+                            </div>
+                        </div>
+                    </details>
+                    <p class="sub-heading" id="bold-this">Programs</p>
+                        <div class="work-background">
+                            <div class="work-container">
+                                <div id="double-line-container">
+                                    <p class="work" id="work-name">
+                                        Student Fellowship '23 Winter Cohort
+                                    </p>
+                                    <p class="work"> • Startmate
+                                    </p>
+                                </div>
+                                <p class="years">JUNE 2023 - JULY 2023</p>
+                            </div>
+                            <div class="experience">
+                                <p id="exp-paragraph">
+                                    Supports student contributions toward startups 
+                                    through roles as founders, employees 
+                                    or investors. Engaged in mentorships and 
+                                    personal coaching sessions with top ANZ 
+                                    entrepreneurs.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="work-background">
+                            <div class="work-container">
+                                <p class="work">GameChangers • Ernst & Young</p>
+                                <p class="years">MAY 2023 - JULY 2023</p>
+                            </div>
+                        </div>
+                        <div class="work-background">
+                            <div class="work-container">
+                                <p class="work">
+                                    APAC Trading Challenge • Citadel x Amplify
+                                </p>
+                                <p class="years">JUNE 2023</p>
+                            </div>
+                            <div class="experience">
+                                <p id="exp-paragraph">
+                                    Experienced real-time trading through the 
+                                    Amplify simulation platform, competing as both
+                                    a market maker and hedge fund. Developed 
+                                    automated trading programs using Python and 
+                                    Jupyter.
+                                </p>
+                            </div>
+                        </div>
+                        <details>
+                            <summary class="summary">More!</summary>
+                            <div class="work-background-more">
+                                <div class="work-container-more">
+                                    <p class="work">Impact Accelerator • 
+                                        Econome & Greenfluence
+                                    </p>
+                                    <p class="years">MAY 2023</p>
+                                </div>
+                                <div class="experience-more">
+                                    <p id="exp-paragraph">
+                                        Quantified ESG and ethical targets for 
+                                        sustainable impact investing. Analysed 
+                                        scopes of GHG emissions, insetting and 
+                                        offsetting opportunities.   
+                                    </p>
+                                </div>
+                            </div>
+                        </details>
+                        <p class="sub-heading" id="bold-this">Leadership</p>
+                        <div class="work-background">
+                            <div class="work-container">
+                                <p class="work">Marketing Officer • 
+                                    UQ Economics Society
+                                </p>
+                                <p class="years">MAY 2023 - PRESENT</p>
+                            </div>
+                        </div>
+                        <div class="work-background">
+                            <div class="work-container">
+                                <p class="work"> Competition Mentor • 
+                                    Tech Girls Movement
+                                </p>
+                                <p class="years">MAY 2023 - PRESENT</p>
+                            </div>
+                        </div>
+                        <details>
+                            <summary class="summary">More!</summary>
+                            <div class="work-background-more">
+                                <div class="work-container-more">
+                                    <p class="work">Debating Captain • 
+                                        St Aidan's
+                                    </p>
+                                    <p class="years">2022</p>
+                                </div>
+                            </div>
+                            <div class="work-background-more">
+                                <div class="work-container-more">
+                                    <p class="work">Technology Captain • 
+                                        St Aidan's
+                                    </p>
+                                    <p class="years">2022</p>
+                                </div>
+                            </div>
+                        </details>
+                        <p class="sub-heading" id="bold-this">Volunteering</p>
+                        <div class="work-background">
+                            <div class="work-container">
+                                <p class="work">Leadership Sub-Team • 
+                                    TEDxUQ
+                                </p>
+                                <p class="years">June 2023 - PRESENT</p>
+                            </div>
+                        </div>
+                        <div class="work-background">
+                            <div class="work-container">
+                                <p class="work">Event Facilitator • 
+                                    UN Youth Australia
+                                </p>
+                                <p class="years">JUNE 2023 - PRESENT</p>
+                            </div>
+                        </div>
+                        <div class="work-background">
+                            <div class="work-container">
+                                <p class="work">Festival Volunteer • 
+                                    Something Fest
+                                </p>
+                                <p class="years">MAY 2023 - PRESENT</p>
+                            </div>
+                        </div>
+                        <details>
+                            <summary class="summary">More!</summary>
+                            <div class="work-background-more">
+                                <div class="work-container-more">
+                                    <p class="work">Event Assistant • 
+                                        QLD AI Summit
+                                    </p>
+                                    <p class="years">JUNE 2023 - PRESENT</p>
+                                </div>
+                            </div>
+                            <div class="work-background-more">
+                                <div class="work-container-more">
+                                    <p class="work">Adjudicator • 
+                                        QLD Debating Union
+                                    </p>
+                                    <p class="years">MARCH 2021 - PRESENT</p>
+                                </div>
+                                <div class="experience-more">
+                                    <p id="exp-paragraph">
+                                        Level 3 Accredited for Senior Level 
+                                        Debates. Received several commendations 
+                                        from the Union due to consistently 
+                                        positive feedback from debaters, 
+                                        parents and schools
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="work-background-more">
+                                <div class="work-container-more">
+                                    <p class="work">Adjudicator • BGDA</p>
+                                    <p class="years">JAN 2023 - PRESENT</p>
+                                </div>
+                            </div>
+                            <div class="work-background-more">
+                                <div class="work-container-more">
+                                    <p class="work">Senior Board Director • 
+                                        Rotary Interact
+                                    </p>
+                                    <p class="years">FEB 2020 - OCT 2022</p>
+                                </div>
+                                <div class="experience-more">
+                                    <p id="exp-paragraph">
+                                        Responsible for minute-taking at 
+                                        fortnightly board meetings and liaised 
+                                        with charities and sponsors. 
+                                        Developed marketing material and 
+                                        strategies for fundraising events.
+                                </div>
+                            </div>
+                            <div class="work-background-more">
+                                <div class="work-container-more">
+                                    <p class="work">Co-Founder •
+                                        Students for Seniors
+                                    </p>
+                                    <p class="years">APRIL 2020 - MARCH 2021</p>
+                                </div>
+                                <div class="experience-more">
+                                    <p id="exp-paragraph">
+                                        Registered and audited by the ACNC as a
+                                        charity with the aim of improving 
+                                        digital literacy in the elderly 
+                                        population. Raised over $6000 in 
+                                        fundraising and distributed masks to 
+                                        senior homes during COVID-19. 
+                                    </p>
+                                </div>
+                            </div>
+                        </details>
+                        <p class="sub-heading" id="bold-this">Awards</p>
+                        <div class="work-background">
+                            <div class="work-container">
+                                <div id="double-line-container">
+                                    <p class="work" id="work-name">2023 
+                                        Climate & Engineering Case Competition
+                                    </p>
+                                    <p class="work"> • Deloitte</p>
+                                </div>
+                                <p class="years">SEMI-FINALISTS</p>
+                            </div>
+                            <div class="experience">
+                                <p id="exp-paragraph">
+                                    Pitched a slide deck investigating 
+                                    lithium battery recycling practices and 
+                                    technologies as consultants to a fictitious 
+                                    enterprise. Developed financial models;  
+                                    analysed the market and risk; evaluated
+                                    the value chain to determine project 
+                                    viability.
+                                </p>
+                            </div>  
+                        </div>
+                        <div class="work-background">
+                            <div class="work-container">
+                                <p class="work">2023
+                                    Vice-Chancellor and Liveris Scholar
+                                    • UQ
+                                </p>
+                                <p class="years">SCHOLARSHIP</p>
+                            </div>
+                        </div>
+                        <details>
+                            <summary class="summary">More!</summary>
+                            <div class="work-background-more">
+                                <div class="work-container-more">
+                                    <div id="double-line-container">
+                                        <p class="work" id="work-name">2023 Regenerative 
+                                            Sustainability Hackathon 
+                                        </p>
+                                        <p class="work"> • UQ Engineering</p>
+                                    </div>
+                                    <p class="years">TOP 5 FINALIST</p>
+                                </div>  
+                                <div class="experience-more">
+                                    <p id="exp-paragraph">
+                                        Pitched a solution targeting 
+                                        regenerative sustainability: 
+                                        biomimicry technology to improve
+                                        wastage systems. Integrated 
+                                        futuristic models with current 
+                                        technologies, considered key 
+                                        interntional stakeholders and 
+                                        implementation policies. 
+                                    </p>
+                                </div> 
+                            </div>
+                            <div class="work-background-more">
+                                <div class="work-container-more">
+                                    <p class="work">2022 School Dux • St Aidan's</p>
+                                </div>  
+                            </div>
+                            <div class="work-background-more">
+                                <div class="work-container-more">
+                                    <div id="double-line-container">
+                                        <p class="work" id="work-name">
+                                            2021 Club and Best Speaker 
+                                        </p>
+                                        <p class="work"> 
+                                            • Lions Youth of the Year
+                                        </p>
+                                    </div>
+                                    <p class="years">DUAL AWARDEE</p>
+                                </div>  
+                            </div>
+                            <div class="work-background-more">
+                                <div class="work-container-more">
+                                    <div id="double-line-container">
+                                        <p class="work" id="work-name">
+                                            2021 EVATT Competition
+                                        </p>
+                                        <p class="work"> 
+                                            • UN Youth Australia
+                                        </p>
+                                    </div>
+                                    <p class="years">
+                                        NATIONAL GRAND FINALISTS
+                                    </p>
+                                </div>  
+                            </div>
+                            <div class="work-background-more">
+                                <div class="work-container-more">
+                                    <p class="work">2021 Top Senior Debater • 
+                                        BGDA
+                                    </p>
+                                    <p class="years">SEMI-FINALISTS</p>
+                                </div> 
+                            </div> 
+                        </details>
+                </div>
+                <div class="content-container" id="projects">
+                    <div class="content-header-container">
+                        <img src="icons/projects-icon.svg" alt="project-icon" 
+                                class="invert-image header-icon"/>
+                        <div class="content-header-underline">
+                            <h2 class="content-header">PROJECTS</h2>
+                        </div>
+                    </div>
+                    <div id="project-spacing"></div>
+                    <a href="website-project-page/website-project-page.html" 
+                        class="project-link">
+                        <div class="project-background">
+                            <div class="project-picture">
+                                <img src="project-pictures/website-pic.png"
+                                    alt="website-pic" 
+                                    class="project-pic"/>
+                            </div>
+                            <div class="project-info-container">
+                                <p class="project-header" id="bold-this">
+                                    Portfolio Website
+                                </p>
+                                <span class="project-description">
+                                    An insight into the build process and my learnings.
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="project-background" id="upcoming-project">
+                        <div class="project-picture">
+                            <img src="project-pictures/upcoming-project-pic.png"
+                                alt="upcoming-pic" 
+                                class="project-pic"/>
+                        </div>
+                        <div class="project-info-container">
+                            <p class="project-header" id="bold-this">
+                                Upcoming Projects
+                            </p>
+                            <span class="project-description">
+                                More to come! 
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
