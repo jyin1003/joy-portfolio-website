@@ -1,0 +1,894 @@
+/*settings for whole document */
+:root {
+    background: linear-gradient(-45deg, #05082d, #0a0e39,#436087);
+    color: #c6d8d8;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.5px;
+    line-height: 25px;
+    }  
+.invert-image {
+    filter: invert(76%) sepia(27%) saturate(737%) hue-rotate(174deg) 
+    brightness(98%) contrast(90%); /*convert SVG icon colour*/
+}
+#bold-this {
+    font-weight: bold;
+    color: #8BC8EE;
+}
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slide-up {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes work-animation-in {
+    0% {
+        background-color: rgba(87, 176, 231, 0.15);
+        transform: scale(1);
+    }
+    100% {
+        background-color: rgba(33, 155, 231, 0.3);
+        transform: scale(1.05);
+    }
+}
+@keyframes work-animation-out {
+    0% {
+        background-color: rgba(33, 155, 231, 0.3);
+        transform: scale(1.05);
+    }
+    100% {
+        background-color: rgba(87, 176, 231, 0.15);
+        transform: scale(1);
+    }
+}
+
+.sub-heading {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold ;
+    margin: 2px 0 10px 0;
+}
+.content-header {
+    font-size: 30px;
+    margin-left: 10px
+}
+.content-header-underline {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    font-family: 'Roboto Mono', monospace;
+
+    height: 50px;
+    width:100%;
+    margin-left: 10px;
+
+    border-bottom: 4px solid #286FA0;
+}
+.content-header-container {
+    display: flex;
+    width:100%
+}
+.header-icon{
+    transition: transform 0.5s ease;
+}
+.header-icon:hover {
+    transform: rotate(-25deg);
+}
+
+/*spacing at the top of the page*/
+#upper-spacing {
+    height: 10vh;
+    color: transparent;
+    background-color: pink;
+}
+/*prevents additional scrolling*/
+html, body {
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+} 
+.container {
+    display: flex;
+    flex-direction: row;
+}
+/*arrange static and content boxes*/
+.static {
+    flex:1;
+}
+.content{
+    flex:2;
+}
+
+/*rearranges elements if screen is minimised*/
+@media (max-width: 1200px) {
+    .container, .static {
+        flex-direction: column;
+        overflow: auto;
+        position: relative;
+    }
+    .content {
+        margin: 0 5vw;
+    }
+
+    .work-container {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+    .work-background {
+        background-color: grey;
+    }
+    #double-line-container {
+        display: flex;
+    }
+    #work-name {
+        margin-right: 8px;
+    }
+    .years {
+        padding-bottom: 10px;
+    }
+
+    .work-container p {
+        margin: 0;
+        padding-top: 10px;
+        margin-bottom: -10px;
+    }
+    .work-background-more {
+        padding: 5px 0;
+    }
+    .work-container-more p {
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+    .experience-more p {
+        padding-top: 10px;
+    }
+    .work-container-more {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    body, html {
+        overflow: auto;
+    }
+}
+
+/*static box*/
+.static {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10vh 5vw;
+    padding: 20px 10px;
+    border-radius: 10px;
+    text-align: center;
+    overflow: hidden;
+    background-color: rgba(87, 176, 231, 0.15);
+    
+    animation: fade-in 1s ease-in-out forwards;
+}
+
+/*add waving emoji to start!!!!*/
+/*intro*/
+#intro-container{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2vh;
+    align-items: center;
+    padding-top:10px;
+}
+#hi {
+    color: #e4f2f2;
+    font-size: 35px;
+    font-weight: bolder; 
+    margin-bottom: 2px;  
+}
+
+/*contact icons*/
+#contacts{
+    display: flex;
+}
+#contacts img {
+    margin: 15px;
+    margin-bottom: 2vh;
+}
+
+/*Education and Location*/
+#stats-container {
+    margin-bottom: 5vh;
+}
+#education, #location {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.2vh;
+    width: 100%;
+}
+#stat-info {
+    color: #dfe6e6;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 15px;
+    padding-left: 20px
+}
+
+/*contents page - add javascript for animation upon scroll!!!*/
+.content-container-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 6vh
+}
+.content-nav {
+    color: inherit;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    transition: font-size 0.3s ease;
+    margin: 1vh;
+}
+.content-nav:hover {
+    text-shadow: 0px 0px 6px #1B9FF1;
+    font-size: 1.5em;
+}
+
+/*content box*/
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    overflow:auto;
+    height:100vh;
+    padding-left: 3vw;
+    padding-right: 10vw;
+
+    opacity: 0;
+    transform: translateY(50px);
+    animation: slide-up 1s ease-in-out forwards;
+
+    scroll-behavior: smooth;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    width:100%;
+}
+
+/*add spacing to the top of the page*/
+#about-me {
+    margin-top: 10vh;
+}
+/*add spacing to the bottom*/
+#projects {
+    margin-bottom: 10vh;
+}
+
+/*about me*/
+#para-1 {
+    margin-bottom: 0;
+}
+#para-1, #para-2 {
+    margin-top: 15px;
+}
+/*toolbox*/
+#toolbox-spacing{
+    margin: 5px
+}
+#language-spacing{
+    margin-top: 10px;
+}
+
+.language-container {
+    display: flex;
+    margin-bottom: 15px;
+}
+.language {
+    font-size: 15px;
+    font-weight: bold;
+    color: #8BC8EE;
+    background-color: rgba(87, 176, 231, 0.15);
+    border-radius: 20px;
+    padding: 8px 15px;
+    margin-right: 10px
+}
+
+/*resume*/
+#work-exp-spacing {
+    margin: 8px;
+}
+#download{
+    padding-left:15px;
+    margin-bottom: -5px;
+    width:30px
+}
+.work-background {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(138, 200, 238, 0.1);
+    border-radius: 10px;
+    margin: 5px 0 5px 10px;
+    padding: 0 5px;
+    width: 100%;
+}
+.work-container { 
+    display: flex;
+    width:100%;
+    justify-content: space-between; /*isolate dates from job title*/
+    align-items:center;
+}
+.work, #exp-paragraph {
+    margin-left: 15px; /*indent*/
+}
+#exp-paragraph {
+    margin-top: -5px /*decrease spacing*/
+}
+
+.years {
+    color: #286FA0;
+    font-weight: bold;
+    padding-right:10px
+}
+.work, .years {
+    font-weight: bold
+}
+
+#work-name {
+    margin-bottom: -20px; /*remove paragraph spacing*/
+}
+
+/*resume toggles*/
+.work-background-more {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(145, 156, 161, 0.1);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.work-container-more {
+    display: flex;
+    width:100%;
+    align-items: center;
+    justify-content: space-between;
+    color: #919CA1;
+}
+.experience-more {
+    display: flex;
+    width:100%;
+    justify-content: space-between;
+    color: #919CA1;
+}
+
+
+details {
+    width:100%; /*expand dates to right edge of container*/
+    padding-bottom:25px
+}
+details, summary {
+    transition: font-size 0.3s ease;
+    margin:5px 0 5px 5px
+}
+details, summary:hover {
+    text-shadow: 0px 0px 6px #1B9FF1;
+    font-size: 1.2em;
+}
+details, .extra {
+    text-shadow: unset;
+    font-size: unset;
+}
+
+/*projects*/
+
+#project-spacing {
+    height:22px
+}
+.project-background {
+    flex:1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: rgba(138, 200, 238, 0.1);
+    border-radius: 10px;
+
+    height: 100px;
+    max-width: 100%;
+    margin: 5px 0 5px 10px;
+    padding: 20px;
+}
+
+.project-info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+
+    width:400px;
+    margin:0;
+    padding:0;
+}
+.project-link {
+    color: inherit;
+    text-decoration: none;
+
+    width: 100%;
+}
+.project-header {
+    margin: -1px; /*remove paragraph spacing*/
+}
+
+.project-picture {
+    height:81px;
+    width: 144px;
+    margin:0;
+    padding: 0;
+}
+.project-pic {
+    max-width:100%;
+    height:auto;
+}
+
+/*settings for whole document */
+:root {
+    background: linear-gradient(-45deg, #05082d, #0a0e39,#436087);
+    color: #c6d8d8;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.9px;
+    line-height: 25px;
+    }  
+.invert-image {
+    filter: invert(76%) sepia(27%) saturate(737%) hue-rotate(174deg) 
+    brightness(98%) contrast(90%); /*convert SVG icon colour*/
+}
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slide-up {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.sub-heading {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold ;
+    margin: 2px 0 10px 0;
+}
+.content-header {
+    font-size: 30px;
+    margin-left: 10px
+}
+.content-header-underline {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    font-family: 'Roboto Mono', monospace;
+
+    height: 50px;
+    width:100%;
+    margin-left: 10px;
+
+    border-bottom: 4px solid #286FA0;
+}
+.content-header-container {
+    display: flex;
+    width:100%
+}
+.header-icon{
+    transition: transform 0.5s ease;
+}
+.header-icon:hover {
+    transform: rotate(-25deg);
+}
+
+/*prevents additional scrolling*/
+html, body {
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+} 
+.container {
+    display: flex;
+    flex-direction: row;
+}
+/*arrange static and content boxes*/
+.static {
+    flex:1;
+}
+.content{
+    flex:2;
+}
+
+/*rearranges elements if screen is minimised*/
+@media (max-width: 1200px) {
+    .container, .static {
+        flex-direction: column;
+        overflow: auto;
+        position: relative;
+    }
+    .content {
+        margin: 0 5vw;
+    }
+
+    .work-container {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+    .work-background {
+        background-color: grey;
+    }
+    #double-line-container {
+        display: flex;
+    }
+    #work-name {
+        margin-right: 8px;
+    }
+    .years {
+        padding-bottom: 10px;
+    }
+
+    .work-container p {
+        margin: 0;
+        padding-top: 10px;
+        margin-bottom: -10px;
+    }
+    .work-background-more {
+        padding: 5px 0;
+    }
+    .work-container-more p {
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+    .experience-more p {
+        padding-top: 10px;
+    }
+    .work-container-more {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    body, html {
+        overflow: auto;
+    }
+}
+
+/*static box*/
+.static {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    margin: 10vh 5vw;
+    padding: 20px 10px;
+    border-radius: 10px;
+    
+    text-align: center;
+    overflow: hidden;
+    background-color: rgba(87, 176, 231, 0.15);
+    
+    animation: fade-in 1s ease-in-out forwards;
+}
+
+/*add waving emoji to start!!!!*/
+/*intro*/
+#intro-container{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2vh;
+
+    align-items: center;
+    padding-top:10px;
+}
+#hi {
+    color: #e4f2f2;
+    font-size: 35px;
+    font-weight: bolder; 
+    margin-bottom: 2px;  
+}
+
+/*contact icons*/
+#contacts{
+    display: flex;
+}
+#contacts img {
+    margin: 15px;
+    margin-bottom: 2vh;
+}
+
+/*Education and Location*/
+#stats-container {
+    margin-bottom: 5vh;
+}
+#education, #location {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.2vh;
+    width: 100%;
+}
+#stat-info {
+    color: #dfe6e6;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 15px;
+    padding-left: 20px
+}
+
+/*contents page - add javascript for animation upon scroll!!!*/
+.content-container-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.content-nav {
+    color: inherit;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    transition: font-size 0.3s ease;
+    margin: 1vh;
+}
+.content-nav:hover {
+    text-shadow: 0px 0px 6px #1B9FF1;
+    font-size: 1.5em;
+}
+
+
+
+/*content box*/
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    overflow:auto;
+    height:100vh;
+    padding-left: 3vw;
+    padding-right: 10vw;
+
+    opacity: 0;
+    transform: translateY(50px);
+    animation: slide-up 1s ease-in-out forwards;
+
+    scroll-behavior: smooth;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width:100%;
+}
+
+/*add spacing to the top of the page*/
+#about-me {
+    margin-top: 10vh;
+}
+/*add spacing to the bottom*/
+#projects {
+    margin-bottom: 10vh;
+}
+
+/*about me*/
+#para-1 {
+    margin-bottom: 0;
+}
+#para-1, #para-2 {
+    margin-top: 15px;
+}
+#bold-this {
+    font-weight: bold;
+    color: #8BC8EE;
+}
+/*toolbox*/
+#toolbox-spacing{
+    margin: 5px
+}
+#language-spacing{
+    margin-top: 10px;
+}
+
+.language-container {
+    display: flex;
+    margin-bottom: 15px;
+}
+.language {
+    font-size: 15px;
+    font-weight: bold;
+    color: #8BC8EE;
+    background-color: rgba(87, 176, 231, 0.15);
+    border-radius: 20px;
+    padding: 8px 15px;
+    margin-right: 10px
+}
+
+/*resume*/
+#work-exp-spacing {
+    margin: 8px;
+}
+#download{
+    padding-left:15px;
+    margin-bottom: -5px;
+    width:30px
+}
+
+.work-background {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(138, 200, 238, 0.1);
+    border-radius: 10px;
+    margin: 5px 0 5px 10px;
+    width: 100%;
+}
+.work-background:hover {
+    animation: work-animation-in 0.5s ease-in-out forwards
+}
+
+.work-background:not(:hover) {
+    animation: work-animation-out 0.2s ease-in-out
+}
+
+
+.work-container { 
+    display: flex;
+    width:100%;
+    justify-content: space-between; /*isolate dates from job title*/
+    align-items:center;
+}
+.work, #exp-paragraph {
+    margin-left: 15px; /*indent*/
+}
+#exp-paragraph {
+    margin-top: -5px /*decrease spacing*/
+}
+
+.years {
+    color: #286FA0;
+    font-weight: bold;
+    padding-right:10px
+}
+.work, .years {
+    font-weight: bold
+}
+
+#work-name {
+    margin-bottom: -20px; /*remove paragraph spacing*/
+}
+
+/*resume toggles*/
+.work-background-more {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(145, 156, 161, 0.1);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.work-container-more {
+    display: flex;
+    width:100%;
+    align-items: center;
+    justify-content: space-between;
+    color: #919CA1;
+}
+.experience-more {
+    display: flex;
+    width:100%;
+    justify-content: space-between;
+    color: #919CA1;
+}
+
+details {
+    width:100%; /*expand dates to right edge of container*/
+    padding-bottom:25px
+}
+details, summary {
+    transition: font-size 0.3s ease;
+    margin:5px 0 5px 5px
+}
+details, summary:hover {
+    text-shadow: 0px 0px 6px #1B9FF1;
+    font-size: 1.2em;
+}
+details {
+    text-shadow: unset;
+    font-size: unset;
+}
+
+/*project*/
+/*spacing*/
+#project-spacing {
+    padding-bottom: 20px;
+}
+
+.project-link {
+    width: 100%;
+    color: inherit; /*remove hyperlink styling*/
+    text-decoration: none;
+}
+.project-background {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    background-color: rgba(138, 200, 238, 0.1);
+    border-radius: 10px;
+
+    padding-bottom: 20px;
+
+    margin-bottom: 10px;
+    width: 100%; 
+}
+.project-background:hover:not(#upcoming-project) {
+    animation: work-animation-in 0.5s ease-in-out forwards
+}
+
+.project-background:not(:hover):not(#upcoming-project) {
+    animation: work-animation-out 0.2s ease-in-out
+}
+
+.project-picture {
+    width:192px;
+    height: 108px;
+}
+.project-pic {
+    max-width: 100%;
+    height: auto;
+}
+
+.project-info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 400px;
+}
+.project-header {
+    font-size: 18px;
+    font-family: 'Roboto Mono', monospace;
+}
+.project-description {
+    font-size: 15px;
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+}
+

@@ -1,0 +1,156 @@
+/*settings for whole document */
+:root {
+    background: linear-gradient(-45deg, #05082d, #0a0e39,#436087);
+    color: #c6d8d8;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.9px;
+    line-height: 25px;
+
+    --alt-font: 'Roboto Mono', monospace;
+    }  
+.invert-image {
+    filter: invert(76%) sepia(27%) saturate(737%) 
+    hue-rotate(174deg) brightness(98%) 
+    contrast(90%); 
+    /*convert SVG icon colour*/
+}
+#link-text{
+    text-decoration: underline; 
+    color:#8BC8EE;
+    font-weight: bold;
+    font-family: var(--alt-font);
+    font-size: 18px;
+    word-spacing: -5px;
+} 
+.bold-this {
+    font-weight: bold;
+    color: #8BC8EE;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes slide-up {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+html, body {
+    height: 100vh;
+    margin: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+} 
+
+.background-cube {
+    background-color: rgba(138, 200, 238, 0.1);
+    border-radius: 10px;
+
+    margin-top: 20px;
+    padding: 1px 20px;
+}
+
+#page-container {
+    display: flex;
+    flex-direction: column;
+    
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+/*navigation bar*/
+#nav-bar {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top:0;
+
+    height:60px;
+    width:100%;
+
+    background-color: rgba(138, 200, 238, 0.3);
+
+    animation: fade-in 1s ease;
+}
+#back-icon {
+    transform: rotate(-90deg);
+    margin-left: 10px;
+}
+#project-title {
+    margin-left: 20px;
+
+    color: #c6d8d8;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/*project content*/
+#all-content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: relative;
+    overflow-y: scroll;
+    height: calc(100%-60px); /*accounts for height of nav bar*/
+    
+    margin-top: 60px;
+}
+/*overall style settings*/
+.heading {
+    margin-bottom: -5px;
+}
+.heading-underline {
+    padding-bottom: 10px;
+    border-bottom: 4px solid #286FA0;
+}
+
+/*content*/
+#content-container {
+    display: flex;
+    flex-direction: row;
+
+    box-sizing: border-box; /*prevents text from exceeding screen width*/
+    height: fit-content;
+    width: 100%;
+    padding: 0 10vw 30px 8vw;
+
+    animation: slide-up 2s ease
+}
+.heading-container {
+    flex:1;
+    padding-right: 50px;
+}
+.description-container {
+    flex: 2;
+}
+.sub-heading {
+    font-family: var(--alt-font);
+}
+
+.snapshot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: -40px 0;
+    padding: 0;
+
+    width: 100%;
+}
+.snapshot-pic {
+    width:70%
+}
