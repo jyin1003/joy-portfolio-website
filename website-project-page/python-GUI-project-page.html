@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <meta name="description" content="Web Development and Extended Resume 
+            for Joy Yin." />
+        <meta name="author" content="Joy Yin" />
+        <meta name="language" content="english" />
+        <meta name="googlebot" content="notranslate" />
+        <meta name="rating" content="safe for kids"/>
+        <meta name="copyright" content="Copyright 2023"/> 
+        <!--ensures initialising transition is smooth-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="website-project-CSS.css"/>
+
+        <title>Joy's Website Project</title>   
+</head>
+<body>
+    <div id="page-container">
+        <a href="../index.html">
+            <div id="nav-bar">
+                <img src="../icons-edit/back-icon.svg"
+                    alt="back-button" 
+                    id="back-icon" 
+                    class="invert-image" 
+                    width=40px 
+                    height=40px />
+                <!-- ../ refers to parent folder-->
+                <span id="project-title">
+                    Python GUI Project
+                </span>
+            </div>
+        </a>
+        <div id="all-content-container">
+            <div id="content-container">
+                <div class="heading-container">
+                    <div class="heading-underline">
+                    <h2 class="heading" id="intro">Project</h2>
+                    </div>
+                </div>
+                <div class="description-container">
+                    <h2 class="sub-heading" id="aim">Python Code</h2>
+                    <div class="background-cube">
+                        <p>
+                            Access through
+                            <a 
+                            href="https://github.com/jyin1003/python-GUI-project"
+                            id="link-text"
+                            >GitHub repository.</a>
+                        </p>
+                    </div>
+                    <h2 class="sub-heading back" id="aim">
+                        Deployment Instructions
+                    </h2>
+                    <div class="background-cube">
+                        <ol>
+                            <li>Download zip file to local storage.</li>
+                            <li>Open a3.py and run.</li>
+                        </ol>
+                    </div>
+                    <h2 class="sub-heading back" id="aim">
+                        How To Play
+                    </h2>
+                    <div class="background-cube">
+                        <p>Green grass: No actionable plays.</p>
+                        <p>Light brown soil: Can be tilled.</p>
+                        <p>Dark brown soil: Tilled and seeds can be planted.</p>
+                        <p>'t': till soil.</p>
+                        <p>'u': untill soil.</p>
+                        <p>'w': move up.</p>
+                        <p>'a': move left.</p>
+                        <p>'s': move down.</p>
+                        <p>'d': move right.</p>
+                        <p>'h': harvest plant and add to inventory.</p>
+                        <p>'r': remove plant without adding to inventory.</p>
+                        <p>
+                            Each move costs 1 energy. Tilling/untilling soil 
+                            costs 3 energy. Planting seeds costs 2 energy.
+                        </p>
+                        <p>
+                            To plant a seed, select the desired seed window 
+                            frame from the inventory frame. 
+                        </p>
+                        <p>
+                            Pressing the next day button will allow the seeds 
+                            to grow and be harvested while resetting the 
+                            energy to 100.   
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="content-container">
+                <div class="heading-container">
+                    <div class="heading-underline">
+                    <h2 class="heading" id="intro">Overview</h2>
+                    </div>
+                </div>
+                <div class="description-container">
+                    <h2 class="sub-heading" id="aim">Aim</h2>
+                    <div class="background-cube">
+                        <p>
+                            Create a game with an interactive experience
+                            through a GUI interface, implementing Python's
+                            <span id="bold-this">
+                                object-orientated programming
+                            </span> and class methods.
+                        </p>
+                    </div>
+                    <h2 class="sub-heading back" id="aim">Build Time</h2>
+                    <div class="background-cube">
+                        <p>This was a course assignment project that took
+                            <span class="bold-this">2 weeks</span>
+                            <span>to build</span>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="content-container">
+                <div class="heading-container">
+                    <div class="heading-underline">
+                        <h2 class="heading" id="process">Process</h2>
+                    </div>
+                </div>
+                <div class="description-container">
+                    <h2 class="sub-heading" id="aim">Key Learning Points</h2>
+                    <div class="background-cube">
+                        <p class="bold-this">
+                            1. Creating an Interactive GUI Game
+                        </p>
+                        <p>
+                            Creating this game required three aspects: firstly, 
+                            the <span class="bold-this">'model'</span> that 
+                            programmed how various components 
+                            of the game functioned; the <span class="bold-this">
+                            'interface'</span> which is 
+                            what the player would interact with; the 
+                            <span class="bold-this">'controller'</span>
+                            which acts as the link between the 
+                            <span class="bold-this">'model'</span> and the 
+                            <span class="bold-this">'interface'</span>. 
+                        </p>
+                    </div>
+                    <div class="background-cube">
+                        <p class="bold-this">
+                            2. Interface 
+                        </p>
+                        <p>
+                            Rendered graphics and formatted the interface with 
+                            various frames and layouts. 
+                        </p>
+                        <div class="snapshot">
+                            <img class="snapshot-pic"
+                                src="code-snapshots/render-code-snapshot.png"
+                                alt="render-code-snapshot"/>
+                        </div>
+                        <p>
+                            Created interactive buttons and dynamic 
+                            'soil tiles' (changes colour upon tilling and 
+                            untilling), character positioning (the character 
+                            image changes with the direction) and inventory 
+                            frames (changes colour upon selection). 
+                        </p>
+                    </div>
+                    <div class="background-cube">
+                        <p class="bold-this">
+                            3. Controller 
+                        </p>
+                        <p>
+                            Used event handlers for various key presses 
+                            which would then translate to changes to the 
+                            interface (keypresses). 
+                        </p>
+                        <div class="snapshot">
+                            <img class="snapshot-pic"
+                                src="code-snapshots/event-handler-code-snapshot.png"
+                                alt="event-handler-code-snapshot"/>
+                        </div>
+                        <p>
+                            Implemented function callbacks according
+                            to player selections (buying and selling items).
+                        </p>
+                        <div class="snapshot">
+                            <img class="snapshot-pic"
+                                src="code-snapshots/callback-code-snapshot.png"
+                                alt="callback-code-snapshot"/>
+                        </div>
+                        </p>
+                        <p>
+                            Used class methods to encapsulate game objects for
+                            code organisation and readability. 
+                        </p>
+                    </div>
+                    <div class="background-cube">
+                        <p class="bold-this">
+                            4. Linking the Controller to the Model 
+                        </p>
+                        <p>
+                            A large part of this project was learning how to 
+                            implement class methods from existing code files 
+                            (a3_support.py, model.py).
+                        </p>
+                        <p>
+                            The main takeaway was learning how to read and 
+                            understand code written by other people whilst 
+                            implementing the functionality to improve the 
+                            efficiency of the game's code. 
+                        </p>
+                    </div>
+                    <h2 class="sub-heading" id="aim">
+                        Obstacles and Limitations
+                    </h2>
+                    <div class="background-cube">
+                        <p class="bold-this">
+                            1. Local Deployment
+                        </p>
+                        <p>
+                            The game can only be deployed through the local 
+                            Python environment whereas ideally, this project
+                            would be accessible publicly. 
+                        </p>
+                        <p>
+                            However, extensive adjustments to the code would be 
+                            required in order to extract the core functionality
+                            of the Tkinter application into a separate Python 
+                            module or set of API endpoints. Furthermore, I 
+                            would need to learn web frameworks for Python, such 
+                            as Flask or Django, to host the application. 
+                        </p>
+                    </div>
+                    <div class="background-cube">
+                        <p class="bold-this">
+                            2. Handling callback functions
+                        </p>
+                        <p>
+                            When instantiating the inventory class, multiple 
+                            callback functions had to be passed in.
+                        </p>
+                        <div class="snapshot">
+                            <img class="snapshot-pic"
+                                src="code-snapshots/lambda-code-snapshot.png"
+                                alt="lambda-code-snapshot"/>
+                        </div>
+                        <p>
+                            However, there was difficulty in intiating the
+                            callback upon either a button click or a left-click 
+                            event. To solve this, the lambda event and 
+                            lambda function was used. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
