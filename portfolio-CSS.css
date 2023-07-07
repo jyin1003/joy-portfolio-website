@@ -90,12 +90,6 @@
     transform: rotate(-25deg);
 }
 
-/*spacing at the top of the page*/
-#upper-spacing {
-    height: 10vh;
-    color: transparent;
-    background-color: pink;
-}
 /*prevents additional scrolling*/
 html, body {
     height: 100vh;
@@ -106,6 +100,19 @@ html, body {
     display: flex;
     flex-direction: row;
 }
+
+/*scroll bar*/
+body {
+    animation: fade-in 4s ease
+}
+::-webkit-scrollbar {
+    width:8px;
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(138, 200, 238, 0.5);
+    border-radius: 5px;
+}
+
 /*arrange static and content boxes*/
 .static {
     flex:1;
